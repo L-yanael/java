@@ -1,25 +1,22 @@
-import java.util.Scanner;
 
 public class M1_E4 {
     public static void main(String[] args) throws Exception {
 
-    // Initialisation du Scanner pour le clavier
-    Scanner clavier = new Scanner(System.in);
+    int heuresEcoulee =15;
+    int minutesEcoulee =27;
+    int secondesEcoulee =12;
+    int heures
+    int
+    int
 
-    System.out.print("Entrez les heures : ");
-    int heures = clavier.nextInt();
+    float PourcentageTemps = 
 
-    System.out.print("Entrez les minutes : ");
-    int minutes = clavier.nextInt();
 
-    System.out.print("Entrez les secondes : ");
-    int secondes = clavier.nextInt();
-        
+    int heuresJournées = 86400;
 
-    int total = heures * 3600 + minutes * 60 + secondes;  // secondes écoulées depuis minuit
+    int total = heures * 3600 + minutes * 60 + secondes;  // pourcentage écoulé depuis tout à l’heure (12:34:56)
+    int totalSecondes = 86400 - total;  // secondes restantes avant minuit
 
-    // On "ferme" la ressource clavier
-    clavier.close();
 
     System.out.println("Il est" + " " + heures + " " + "h" + " "  + minutes + " " + "min" + " " + secondes + " " + "s."); 
     System.out.println("Il y a encore" + " " + total + "s avant minuit.");
