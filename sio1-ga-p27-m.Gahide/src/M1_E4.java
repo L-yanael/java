@@ -5,14 +5,14 @@ public class M1_E4 {
     int heuresEcoulee =15;
     int minutesEcoulee =27;
     int secondesEcoulee =12;
-    int heures
+    int heures = 24 - heuresEcoulee - 1;  // heures restantes avant minuit
     int
     int
 
     float PourcentageTemps = 
 
 
-    int heuresJournées = 86400;
+     heuresJournées = 86400;
 
     int total = heures * 3600 + minutes * 60 + secondes;  // pourcentage écoulé depuis tout à l’heure (12:34:56)
     int totalSecondes = 86400 - total;  // secondes restantes avant minuit
