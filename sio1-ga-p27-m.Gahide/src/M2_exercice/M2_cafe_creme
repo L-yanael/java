@@ -1,0 +1,21 @@
+package M2_exercice;
+
+import java.util.Scanner;
+
+public class M2_cafe_creme {
+    public static void main(String[] args) {
+
+      System.out.print("Bonjour ! Je suis l'assistant de la machine à café. Dites-moi les pièces jaunes dont vous disposez :");
+      Scanner clavier = new Scanner(System.in);
+      int nb = clavier.nextInt();
+      clavier.close();
+
+      if ( nb %2 == 0 ) { // test si nb est pair == reste de la division par 2 est 0
+        System.out.println("Le nombre " + nb + " est pair.");
+      } else {
+        System.out.println("Le nombre " + nb + " est impair.");
+      }
+
+  }
+}
+  

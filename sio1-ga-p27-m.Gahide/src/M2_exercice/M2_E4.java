@@ -7,7 +7,7 @@ public class M2_E4 {
 
     System.out.println("Quelle couleur souhaitez-vous ?");
     Scanner clavier = new Scanner(System.in);
-    String couleur = clavier.nextln();
+    String couleur = clavier;
     clavier.close();
 
 

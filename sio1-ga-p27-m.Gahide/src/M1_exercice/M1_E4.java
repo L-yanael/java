@@ -1,3 +1,4 @@
+package M1_exercice;
 
 public class M1_E4 {
     public static void main(String[] args) throws Exception {
@@ -21,5 +22,5 @@ public class M1_E4 {
     System.out.println("Il est" + " " + heures + " " + "h" + " "  + minutes + " " + "min" + " " + secondes + " " + "s."); 
     System.out.println("Il y a encore" + " " + total + "s avant minuit.");
 
- } 
+ }
 }

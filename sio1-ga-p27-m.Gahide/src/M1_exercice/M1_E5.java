@@ -1,3 +1,5 @@
+package M1_exercice;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -27,7 +29,8 @@ public class M1_E5 {
     System.out.println("Le nombre auquel je pensais était : " + nombreADeviner);
 
     // Calcul de l'écart entre le nombre à deviner et la proposition du joueur
-    // Utilisation de Math.abs (valeur absolue) pour avoir une valeur positive de l'écart,
+    // Utilisation de Math.abs (valeur absolue) pour avoir une valeur positive de
+    // l'écart,
     // même quand le nombre à deviner est plus petit que la proposition du joueur
     int ecart = Math.abs(nombreADeviner - propositionJoueur);
 
