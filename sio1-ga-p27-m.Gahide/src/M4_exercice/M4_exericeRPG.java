@@ -31,14 +31,14 @@ public class M4_exericeRPG {
         System.out.println("Points de vie : " + pointsDeVie);
     }
 
+    // Exercice 4
     public static int attaque(String nom) {
         int degats = rand.nextInt(50, 101); // 50 à 100 inclus
         System.out.println(nom + " inflige " + degats + " points de dégâts.");
         return degats;
     }
 
-    public static int renvoieDegats(int degats) {
+    public static int renvoieDegats(int degats, int force) {
 
     }
-
 }
