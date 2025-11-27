@@ -3,24 +3,24 @@ package M1_exercice;
 public class M1_E4 {
     public static void main(String[] args) throws Exception {
 
-    int heuresEcoulee =15;
-    int minutesEcoulee =27;
-    int secondesEcoulee =12;
-    int heures = 24 - heuresEcoulee - 1;  // heures restantes avant minuit
-    int
-    int
+        int heuresEcoulee = 15;
+        int minutesEcoulee = 27;
+        int secondesEcoulee = 12;
 
-    float PourcentageTemps = 
+        // total écoulé depuis minuit
+        int totalEcoule = heuresEcoulee * 3600 + minutesEcoulee * 60 + secondesEcoulee;
 
+        // total de la journée
+        int totalJournee = 86400;
 
-     heuresJournées = 86400;
+        // secondes restantes
+        int secondesRestantes = totalJournee - totalEcoule;
 
-    int total = heures * 3600 + minutes * 60 + secondes;  // pourcentage écoulé depuis tout à l’heure (12:34:56)
-    int totalSecondes = 86400 - total;  // secondes restantes avant minuit
+        // pourcentage écoulé
+        float pourcentageTemps = (totalEcoule * 100.0f) / totalJournee;
 
-
-    System.out.println("Il est" + " " + heures + " " + "h" + " "  + minutes + " " + "min" + " " + secondes + " " + "s."); 
-    System.out.println("Il y a encore" + " " + total + "s avant minuit.");
-
- }
+        System.out.println("Il est " + heuresEcoulee + " h " + minutesEcoulee + " min " + secondesEcoulee + " s.");
+        System.out.println("Il reste " + secondesRestantes + " s avant minuit.");
+        System.out.println("Pourcentage de la journée écoulée : " + pourcentageTemps + "%");
+    }
 }

@@ -7,19 +7,17 @@ public class M2_E4 {
 
     System.out.println("Quelle couleur souhaitez-vous ?");
     Scanner clavier = new Scanner(System.in);
-    String couleur = clavier;
+
+    String couleur = clavier.nextLine(); // lecture de la couleur
     clavier.close();
 
-
-    if ( lettre == couleur) {
+    // tester la couleur
+    if (couleur.equalsIgnoreCase("bleu")) {
       System.out.println("Vous avez choisi le bleu.");
-    } else if() {
-      System.out.println("Vous avez choisi le rouge");
+    } else if (couleur.equalsIgnoreCase("rouge")) {
+      System.out.println("Vous avez choisi le rouge.");
+    } else {
+      System.out.println("Connais pas");
     }
-   else() {
-
-    System.out.println("Connais pas");
   }
-
- }
 }
